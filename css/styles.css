@@ -303,6 +303,14 @@ body {
   margin-left: 30px;
 }
 
+.features-icon {
+  display: block;
+  width: 270px;
+  height: 120px;
+  padding: 25px 100px;
+  background-color: var(--button-background-color);
+}
+
 .features-title {
   padding-top: 30px;
   margin-bottom: 10px;

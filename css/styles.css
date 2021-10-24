@@ -517,6 +517,7 @@ body {
 
 .footer-contacts {
   width: 231px;
+  margin-right: 70px;
 }
 
 .adress-link {
@@ -536,6 +537,56 @@ body {
   font-size: var(--base-font-size);
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-invite-text {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-social-item {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+}
+
+.footer-social-item:last-child {
+  margin-right: 0;
+}
+
+.footer-social-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--primary-white-color);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--accent-color);
 }
 
 /* Портфолио */

@@ -36,8 +36,6 @@ img {
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 400;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   background-color: var(--primary-white-color);
@@ -83,16 +81,13 @@ body {
 }
 
 .nav .logo-header {
-  display: block;
   padding-top: 24px;
   padding-bottom: 24px;
   margin-right: 93px;
-  align-self: center;
 }
 
 .nav-links {
   display: flex;
-  margin-right: auto;
 }
 
 .nav-links .item:not(:last-child) {
@@ -110,10 +105,6 @@ body {
   margin-left: auto;
 }
 
-.contact-links .item {
-  align-self: center;
-}
-
 .contact-links .item:not(:last-child) {
   margin-right: 30px;
 }
@@ -126,48 +117,19 @@ body {
   padding-bottom: 32px;
 }
 
-.contact-icon-envelop {
+.contact-icon {
   width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  fill: var(--primary-text-color);
-}
-
-.contact-icon-smartphone {
-  width: 10px;
   height: 16px;
   margin-right: 10px;
   fill: var(--primary-text-color);
 }
 
-.contact-link:hover .contact-icon-smartphone,
-.contact-link:focus .contact-icon-smartphone,
-.contact-link:hover .contact-icon-envelop,
-.contact-link:focus .contact-icon-envelop {
+.contact-link:hover .contact-icon,
+.contact-link:focus .contact-icon,
+.contact-link:hover .contact-icon,
+.contact-link:focus .contact-icon {
   fill: var(--accent-color);
 }
-
-/* .contact-link.link[href*='tel']::before {
-  content: '';
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  background-image: url(../images/smartphone.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.contact-link.link[href*='mailto']::before {
-  content: '';
-  width: 12px;
-  height: 16px;
-  margin-right: 10px;
-  background-image: url(../images/envelope.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-} */
 
 .logo {
   font-family: Raleway, sans-serif;
@@ -215,7 +177,6 @@ body {
   margin-right: auto;
   margin-left: auto;
 
-  text-align: center;
   background-color: #2f303a;
 
   background-image: linear-gradient(
@@ -232,10 +193,10 @@ body {
 
 .hero-title {
   width: 696px;
-  min-height: 120px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
+  text-align: center;
 
   font-weight: 900;
   font-size: 44px;
@@ -262,7 +223,6 @@ body {
   border-radius: 4px;
   border-style: none;
 
-  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -302,12 +262,17 @@ body {
   margin-left: 30px;
 }
 
-.features-icon {
-  display: block;
+.futures-image {
   width: 270px;
   height: 120px;
-  padding: 25px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--button-background-color);
+}
+.features-icon {
+  width: 70px;
+  height: 70px;
 }
 
 .features-title {
@@ -333,7 +298,6 @@ body {
 }
 
 .works-section-title {
-  min-width: 346px;
   margin-bottom: 50px;
 }
 
@@ -351,9 +315,6 @@ body {
 /* Команда */
 
 .section-teems {
-  margin-right: auto;
-  margin-left: auto;
-
   padding-top: 94px;
   padding-bottom: 94px;
 
@@ -455,16 +416,12 @@ body {
 
 .clients-list {
   display: flex;
-  flex-wrap: nowrap;
   margin-left: -30px;
-  align-items: center;
-  justify-content: center;
 }
 
 .clients-list-item {
   flex-basis: calc(100% / 6 - 30px);
   margin-left: 30px;
-  width: 170px;
   height: 92px;
 }
 
@@ -474,7 +431,6 @@ body {
   justify-content: center;
   width: 100%;
   height: 100%;
-  padding: 16px 32px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
@@ -487,7 +443,7 @@ body {
 .client-icon {
   width: 106px;
   height: 60px;
-  fill: var(--primary-text-color);
+  fill: var(--primary-icon-color);
 }
 
 .clients-link:hover .client-icon,
@@ -497,18 +453,15 @@ body {
 
 /* Футер */
 .section-footer {
-  width: 1600px;
   padding-top: 60px;
   padding-bottom: 60px;
-  margin-left: auto;
-  margin-right: auto;
 
   background-color: #2f303a;
 }
 
 .footer-logo {
   display: block;
-  width: 145px;
+  /* width: 145px; */
   margin-bottom: 20px;
 
   text-decoration: none;
@@ -516,7 +469,7 @@ body {
 }
 
 .footer-contacts {
-  width: 231px;
+  /* width: 231px; */
   margin-right: 70px;
 }
 
@@ -643,8 +596,6 @@ body {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
-
-  border: 1px solid #eeeeee;
 }
 
 .portfolio-list-item:hover,
@@ -654,6 +605,7 @@ body {
 }
 
 .portfolio-list-card {
+  border: 1px solid #eeeeee;
   padding: 20px 24px;
 }
 

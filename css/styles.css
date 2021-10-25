@@ -37,6 +37,7 @@ img {
 body {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.03em;
+
   color: var(--primary-text-color);
   background-color: var(--primary-white-color);
 }
@@ -56,16 +57,17 @@ body {
 
 .container {
   width: 1200px;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
 }
 
 .list {
   list-style-type: none;
 }
 
-/* Шапка сайта */
+/* ----------Шапка сайта---------- */
+
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -74,16 +76,17 @@ body {
   display: flex;
 }
 
-/* Навигация */
+/* ----------Навигация---------- */
+
 .nav {
   display: flex;
   align-items: center;
 }
 
 .nav .logo-header {
+  margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 24px;
-  margin-right: 93px;
 }
 
 .nav-links {
@@ -121,6 +124,7 @@ body {
   width: 16px;
   height: 16px;
   margin-right: 10px;
+
   fill: var(--primary-text-color);
 }
 
@@ -153,6 +157,7 @@ body {
   font-size: var(--base-font-size);
   line-height: 1.14;
   letter-spacing: 0.02em;
+
   color: var(--title-text-color);
 }
 
@@ -169,16 +174,16 @@ body {
   color: var(--primary-text-color);
 }
 
-/* Герой */
+/* ----------Герой---------- */
+
 .section-hero {
   max-width: 1600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
   margin-right: auto;
   margin-left: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
 
   background-color: #2f303a;
-
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -201,9 +206,9 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
   color: var(--primary-white-color);
 }
 
@@ -214,7 +219,6 @@ body {
 
 .button {
   display: block;
-
   min-width: 200px;
   height: 50px;
 
@@ -228,6 +232,7 @@ body {
   line-height: 1.88;
   text-align: center;
   letter-spacing: 0.06em;
+
   color: var(--primary-white-color);
 }
 
@@ -241,10 +246,11 @@ body {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+
   color: var(--title-text-color);
 }
 
-/* Преимущества */
+/* ----------Преимущества---------- */
 
 .section-features {
   padding-top: 94px;
@@ -265,24 +271,28 @@ body {
 .futures-image {
   width: 270px;
   height: 120px;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
   background-color: var(--button-background-color);
 }
+
 .features-icon {
   width: 70px;
   height: 70px;
 }
 
 .features-title {
-  padding-top: 30px;
   margin-bottom: 10px;
+  padding-top: 30px;
 
   font-weight: 700;
   font-size: var(--base-font-size);
   line-height: 1.14;
   text-transform: uppercase;
+
   color: var(--title-text-color);
 }
 
@@ -291,7 +301,8 @@ body {
   line-height: 1.71;
 }
 
-/* Виды работ */
+/* ----------Виды работ---------- */
+
 .section-works {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -312,7 +323,7 @@ body {
   margin-left: 30px;
 }
 
-/* Команда */
+/* ----------Команда---------- */
 
 .section-teems {
   padding-top: 94px;
@@ -334,6 +345,7 @@ body {
 .teems-list-item {
   flex-basis: calc(100% / 4 -30px);
   margin-left: 30px;
+
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -342,23 +354,28 @@ body {
 .masters-item-description {
   padding-top: 30px;
   padding-bottom: 30px;
+
   background-color: var(--primary-white-color);
 }
 
 .teems-list-title {
   margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+
   color: var(--title-text-color);
 }
 
 .teems-list-desc {
+  margin-bottom: 16px;
+
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  margin-bottom: 16px;
+
   color: var(--primary-text-color);
 }
 
@@ -380,17 +397,20 @@ body {
 .social-icon {
   width: 20px;
   height: 20px;
+
   fill: var(--primary-icon-color);
 }
 
 .social-link {
   width: 100%;
   height: 100%;
-  border-radius: 50%;
-  background-color: var(--primary-white-color);
+
   display: flex;
   align-items: center;
   justify-content: center;
+
+  border-radius: 50%;
+  background-color: var(--primary-white-color);
 }
 
 .social-link:hover,
@@ -403,7 +423,7 @@ body {
   fill: var(--primary-white-color);
 }
 
-/* Клиенты */
+/* ----------Клиенты---------- */
 
 .section-clients {
   padding-top: 94px;
@@ -429,8 +449,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
   width: 100%;
   height: 100%;
+
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
@@ -443,6 +465,7 @@ body {
 .client-icon {
   width: 106px;
   height: 60px;
+
   fill: var(--primary-icon-color);
 }
 
@@ -451,7 +474,8 @@ body {
   fill: var(--accent-color);
 }
 
-/* Футер */
+/* ----------Футер---------- */
+
 .section-footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -461,7 +485,6 @@ body {
 
 .footer-logo {
   display: block;
-  /* width: 145px; */
   margin-bottom: 20px;
 
   text-decoration: none;
@@ -469,7 +492,6 @@ body {
 }
 
 .footer-contacts {
-  /* width: 231px; */
   margin-right: 70px;
 }
 
@@ -479,6 +501,7 @@ body {
   font-size: var(--base-font-size);
   line-height: 1.71;
   letter-spacing: 0.03em;
+
   color: var(--primary-white-color);
 }
 
@@ -489,6 +512,7 @@ body {
   text-decoration: none;
   font-size: var(--base-font-size);
   line-height: 1.71;
+
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -499,10 +523,12 @@ body {
 
 .footer-invite-text {
   margin-bottom: 20px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+
   color: var(--primary-white-color);
 }
 
@@ -524,16 +550,19 @@ body {
 .footer-social-link {
   width: 100%;
   height: 100%;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
+
   display: flex;
   align-items: center;
   justify-content: center;
+
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .footer-social-icon {
   width: 20px;
   height: 20px;
+
   fill: var(--primary-white-color);
 }
 
@@ -542,7 +571,7 @@ body {
   background-color: var(--accent-color);
 }
 
-/* Портфолио */
+/* ----------Портфолио---------- */
 
 .section-portfolio {
   padding-top: 94px;
@@ -561,17 +590,17 @@ body {
 
 .portfolio-filter-button {
   padding: 6px 22px;
-  background: var(--button-background-color);
-  border-radius: 4px;
-  border-style: none;
-
-  cursor: pointer;
 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
+
+  border-radius: 4px;
+  border-style: none;
+
+  background: var(--button-background-color);
   color: var(--title-text-color);
 }
 
@@ -610,10 +639,13 @@ body {
 }
 
 .portfolio-list-title {
+  margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
   color: var(--title-text-color);
 }
 

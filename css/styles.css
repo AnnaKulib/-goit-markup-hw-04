@@ -115,13 +115,21 @@ body {
 .contact-link {
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
+
   padding-top: 32px;
   padding-bottom: 32px;
 }
 
-.contact-icon {
+.contact-icon.envelope {
   width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: var(--primary-text-color);
+}
+
+.contact-icon.smartphone {
+  width: 10px;
   height: 16px;
   margin-right: 10px;
 
